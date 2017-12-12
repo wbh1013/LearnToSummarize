@@ -9,7 +9,7 @@
 #import "WBHInterfaceController.h"
 #import "WBHWebViewJSController.h"
 #import "WBHAnimatedTransitionsController.h"
-
+#import "WBHCoreOfAnimationViewController.h"
 @interface WBHInterfaceController ()<UITableViewDelegate,UITableViewDataSource>
 //
 @property (nonatomic,strong)UITableView * tableview;
@@ -28,9 +28,12 @@
     [self createUI];
 }
 -(void)initData{
-    _dataArray = @[@"UIWebView与js的交互",@"转场动画"];
+    _dataArray = @[@"UIWebView与js的交互",@"转场动画",@"核心动画"];
     
-    _VCArray = @[NSStringFromClass([WBHWebViewJSController class]),NSStringFromClass([WBHAnimatedTransitionsController class])];
+    _VCArray = @[NSStringFromClass([WBHWebViewJSController class]),
+                 NSStringFromClass([WBHAnimatedTransitionsController class]),
+                 NSStringFromClass([WBHCoreOfAnimationViewController class])
+                 ];
 }
 -(void)createUI{
 
