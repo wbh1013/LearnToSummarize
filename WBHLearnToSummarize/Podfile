@@ -11,5 +11,5 @@ target 'WBHLearnToSummarize' do
     inherit! :search_paths
     # Pods for testing
   end
-pod 'SDWebImage', '~> 4.2.2' #https://github.com/rs/SDWebImage
+    pod 'SDWebImage', '~> 4.2.2' #https://github.com/rs/SDWebImage
 end

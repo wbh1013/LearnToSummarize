@@ -7,16 +7,28 @@
 //
 
 #import "AppDelegate.h"
-
+//#import "WBHNavigationController.h"
+#import "WBHTabBarController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+#pragma mark 创建Window
+-(void)createWindow{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[WBHTabBarController alloc]init];
+    [self.window makeKeyAndVisible];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //创建Window
+    [self createWindow];
+
+    
     return YES;
 }
 

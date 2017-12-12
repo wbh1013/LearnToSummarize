@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WBHTabBarController.h
 //  WBHLearnToSummarize
 //
 //  Created by hjy on 2017/12/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WBHTabBarController : UITabBarController
 
 @end
-
