@@ -9,5 +9,6 @@
 #import "WBHBaseViewController.h"
 
 @interface WBHWebViewJSController : WBHBaseViewController
-
+//设置加载进度条
+@property (nonatomic,strong) UIProgressView *progressView;
 @end
