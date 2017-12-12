@@ -9,11 +9,23 @@
 #import "WBHTabBarController.h"
 #import "WBHInterfaceController.h"
 #import "WBHUtilityClassController.h"
+#import "WBHNavigationController.h"
 @interface WBHTabBarController ()
 
 @end
 
 @implementation WBHTabBarController
+
+
++(void)initialize{
+    [super initialize];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor hx_colorWithHexRGBAString:@"#9a9795"],NSForegroundColorAttributeName,[UIFont systemFontOfSize:11],NSFontAttributeName, nil] forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor hx_colorWithHexRGBAString:@"#22c5c0"], NSForegroundColorAttributeName,[UIFont systemFontOfSize:11],NSFontAttributeName, nil] forState:UIControlStateSelected];
+    
+    //  tabBar的颜色
+    [[UITabBar appearance] setBarTintColor:[UIColor hx_colorWithHexRGBAString:@"ffffff"]];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,16 +40,11 @@
     VC.title = titleString;
     VC.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     VC.tabBarItem.image = [[UIImage imageNamed:normalImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:VC];
+    WBHNavigationController * nav = [[WBHNavigationController alloc]initWithRootViewController:VC];
     
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor hx_colorWithHexRGBAString:@"006633"]];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    //  关闭透明，无穿透效果
-    [[UINavigationBar appearance] setTranslucent:NO];
+   
     nav.jz_fullScreenInteractivePopGestureEnabled = YES;
-//    [nav.navigationBar setBackgroundImage:[KMTools createImageWithColor:ThemeColor] forBarMetrics:UIBarMetricsDefault];
-//    [nav.navigationBar setShadowImage:[KMTools createImageWithColor:ThemeColor]];
+
     [self addChildViewController:nav];
 }
 

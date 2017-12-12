@@ -14,24 +14,27 @@
 
 @implementation WBHNavigationController
 
+
++(void)initialize{
+    [super initialize];
+    // 在info.plist 中 View controller-based status bar appearance 设置为NO
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+//    [nav.navigationBar setBackgroundImage:[KMTools createImageWithColor:ThemeColor] forBarMetrics:UIBarMetricsDefault];
+//    [nav.navigationBar setShadowImage:[KMTools createImageWithColor:ThemeColor]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor hx_colorWithHexRGBAString:@"22c5c0"]];
+    [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
+    //  关闭透明，无穿透效果
+    [[UINavigationBar appearance] setTranslucent:NO];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
