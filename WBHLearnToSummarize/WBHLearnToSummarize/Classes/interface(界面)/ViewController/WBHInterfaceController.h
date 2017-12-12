@@ -1,5 +1,5 @@
 //
-//  WBHUtilityClassController.h
+//  WBHInterfaceController.h
 //  WBHLearnToSummarize
 //
 //  Created by hjy on 2017/12/12.
@@ -8,6 +8,6 @@
 
 #import "WBHBaseViewController.h"
 
-@interface WBHUtilityClassController : WBHBaseViewController
+@interface WBHInterfaceController : WBHBaseViewController
 
 @end

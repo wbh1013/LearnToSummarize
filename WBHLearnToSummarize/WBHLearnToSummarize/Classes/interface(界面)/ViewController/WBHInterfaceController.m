@@ -7,12 +7,16 @@
 //
 
 #import "WBHInterfaceController.h"
+#import "WBHWebViewJSController.h"
+
 
 @interface WBHInterfaceController ()<UITableViewDelegate,UITableViewDataSource>
 //
 @property (nonatomic,strong)UITableView * tableview;
 //
 @property (nonatomic,strong)NSArray     * dataArray;
+//
+@property (nonatomic,strong)NSArray     * VCArray;
 @end
 
 @implementation WBHInterfaceController
@@ -22,14 +26,20 @@
     [self initData];
     
     [self createUI];
-    
-    
 }
 -(void)initData{
-    _dataArray = @[@"1",@"2"];
+    _dataArray = @[@"UIWebView与js的交互",@"2"];
+    
+    _VCArray = @[NSStringFromClass([WBHWebViewJSController class]),NSStringFromClass([WBHWebViewJSController class])];
 }
 -(void)createUI{
 
+    if (@available(iOS 11.0, *)) {
+        self.tableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     [self.view addSubview:self.tableview];
     [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
@@ -44,6 +54,7 @@
     
 }
 
+#pragma mark UITableView的懒加载
 -(UITableView *)tableview{
     if (_tableview == nil) {
         _tableview = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -53,10 +64,10 @@
     
     return _tableview;
 }
+#pragma mark UITableViewDelegate,UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count;
 }
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString * cellID = @"cellID";
@@ -68,5 +79,11 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView  deselectRowAtIndexPath:indexPath animated:YES];
+    NSString * classString = [NSString stringWithFormat:@"%@", _VCArray[indexPath.row]];
+    Class  vc =  NSClassFromString(classString);
+    [self.navigationController pushViewController:[[vc alloc]init] animated:YES];
+}
 
 @end

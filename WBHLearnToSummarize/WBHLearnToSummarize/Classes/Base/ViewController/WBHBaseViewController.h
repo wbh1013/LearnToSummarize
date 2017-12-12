@@ -1,5 +1,5 @@
 //
-//  WBHInterfaceController.h
+//  WBHBaseViewController.h
 //  WBHLearnToSummarize
 //
 //  Created by hjy on 2017/12/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBHInterfaceController : UIViewController
+@interface WBHBaseViewController : UIViewController
 
 @end

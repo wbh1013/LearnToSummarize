@@ -42,7 +42,7 @@
     WBHNavigationController * nav = [[WBHNavigationController alloc]initWithRootViewController:VC];
     
    
-    nav.jz_fullScreenInteractivePopGestureEnabled = YES;
+//    nav.jz_fullScreenInteractivePopGestureEnabled = YES;
 
     [self addChildViewController:nav];
 }
