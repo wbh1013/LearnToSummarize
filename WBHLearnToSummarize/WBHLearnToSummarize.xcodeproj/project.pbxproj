@@ -23,6 +23,7 @@
 		46B33C5D1FDFB2EA00ED5C7D /* WBHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B33C5C1FDFB2EA00ED5C7D /* WBHBaseViewController.m */; };
 		46B33C611FDFD68100ED5C7D /* WBHWebViewJSController+WBHDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B33C601FDFD68100ED5C7D /* WBHWebViewJSController+WBHDelegate.m */; };
 		5F7B96320BB2D0060BB29655 /* libPods-WBHLearnToSummarizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D976F06EAC5DAF5928C38C /* libPods-WBHLearnToSummarizeUITests.a */; };
+		C1F727F31FE01F5300596727 /* WBHAnimatedTransitionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F727F21FE01F5300596727 /* WBHAnimatedTransitionsController.m */; };
 		DAC5DEED0F133C6D65CB6A8B /* libPods-WBHLearnToSummarize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2A4EA210F85B1C9D69828 /* libPods-WBHLearnToSummarize.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		46B33C601FDFD68100ED5C7D /* WBHWebViewJSController+WBHDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WBHWebViewJSController+WBHDelegate.m"; sourceTree = "<group>"; };
 		4CEB537A42D0E130D5A429C7 /* Pods-WBHLearnToSummarizeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBHLearnToSummarizeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBHLearnToSummarizeUITests/Pods-WBHLearnToSummarizeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B6710528E3D9E522B6FD7E9 /* Pods-WBHLearnToSummarize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBHLearnToSummarize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBHLearnToSummarize/Pods-WBHLearnToSummarize.debug.xcconfig"; sourceTree = "<group>"; };
+		C1F727F11FE01F5300596727 /* WBHAnimatedTransitionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHAnimatedTransitionsController.h; sourceTree = "<group>"; };
+		C1F727F21FE01F5300596727 /* WBHAnimatedTransitionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHAnimatedTransitionsController.m; sourceTree = "<group>"; };
 		C7D976F06EAC5DAF5928C38C /* libPods-WBHLearnToSummarizeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBHLearnToSummarizeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D2A4EA210F85B1C9D69828 /* libPods-WBHLearnToSummarize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBHLearnToSummarize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -213,6 +216,8 @@
 				46B33C501FDFB0CA00ED5C7D /* WBHInterfaceController.m */,
 				46B33C521FDFB0FC00ED5C7D /* WBHWebViewJSController.h */,
 				46B33C531FDFB0FC00ED5C7D /* WBHWebViewJSController.m */,
+				C1F727F11FE01F5300596727 /* WBHAnimatedTransitionsController.h */,
+				C1F727F21FE01F5300596727 /* WBHAnimatedTransitionsController.m */,
 				46B33C5F1FDFD68100ED5C7D /* WBHWebViewJSController+WBHDelegate.h */,
 				46B33C601FDFD68100ED5C7D /* WBHWebViewJSController+WBHDelegate.m */,
 			);
@@ -459,6 +464,7 @@
 				46B33C481FDF7E9B00ED5C7D /* WBHNavigationController.m in Sources */,
 				46B33C381FDF7CE400ED5C7D /* AppDelegate.m in Sources */,
 				46B33C4C1FDF7F1500ED5C7D /* UIWindow+WBHWindow.m in Sources */,
+				C1F727F31FE01F5300596727 /* WBHAnimatedTransitionsController.m in Sources */,
 				46B33C511FDFB0CA00ED5C7D /* WBHInterfaceController.m in Sources */,
 				46B33C541FDFB0FC00ED5C7D /* WBHWebViewJSController.m in Sources */,
 				46B33C5D1FDFB2EA00ED5C7D /* WBHBaseViewController.m in Sources */,

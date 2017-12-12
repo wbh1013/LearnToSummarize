@@ -8,7 +8,7 @@
 
 #import "WBHInterfaceController.h"
 #import "WBHWebViewJSController.h"
-
+#import "WBHAnimatedTransitionsController.h"
 
 @interface WBHInterfaceController ()<UITableViewDelegate,UITableViewDataSource>
 //
@@ -28,9 +28,9 @@
     [self createUI];
 }
 -(void)initData{
-    _dataArray = @[@"UIWebView与js的交互",@"2"];
+    _dataArray = @[@"UIWebView与js的交互",@"转场动画"];
     
-    _VCArray = @[NSStringFromClass([WBHWebViewJSController class]),NSStringFromClass([WBHWebViewJSController class])];
+    _VCArray = @[NSStringFromClass([WBHWebViewJSController class]),NSStringFromClass([WBHAnimatedTransitionsController class])];
 }
 -(void)createUI{
 
