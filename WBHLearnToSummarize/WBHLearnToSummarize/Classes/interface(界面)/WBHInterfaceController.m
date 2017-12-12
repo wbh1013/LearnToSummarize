@@ -8,30 +8,65 @@
 
 #import "WBHInterfaceController.h"
 
-@interface WBHInterfaceController ()
-
+@interface WBHInterfaceController ()<UITableViewDelegate,UITableViewDataSource>
+//
+@property (nonatomic,strong)UITableView * tableview;
+//
+@property (nonatomic,strong)NSArray     * dataArray;
 @end
 
 @implementation WBHInterfaceController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initData];
+    
+    [self createUI];
+    
+    
+}
+-(void)initData{
+    _dataArray = @[@"1",@"2"];
+}
+-(void)createUI{
+
+    [self.view addSubview:self.tableview];
+    [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+
+    if ([self.tableview respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tableview setLayoutMargins:UIEdgeInsetsZero];
+    }
+    if ([self.tableview respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tableview setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(UITableView *)tableview{
+    if (_tableview == nil) {
+        _tableview = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableview.delegate = self;
+        _tableview.dataSource = self;
+    }
+    
+    return _tableview;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _dataArray.count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString * cellID = @"cellID";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",_dataArray[indexPath.row]];
+    return cell;
 }
-*/
+
 
 @end

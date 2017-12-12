@@ -11,7 +11,8 @@ target 'WBHLearnToSummarize' do
     inherit! :search_paths
     # Pods for testing
   end
-    pod 'SDWebImage', '~> 4.2.2' #https://github.com/rs/SDWebImage
-     pod 'JZNavigationExtension',      '1.5.0.1'   #源码下载地址:https://github.com/JazysYu/JZNavigationExtension.git
+     pod 'SDWebImage', '~> 4.2.2'                   #源码下载地址:https://github.com/rs/SDWebImage
+     pod 'JZNavigationExtension',      '1.5.0.1'    #源码下载地址:https://github.com/JazysYu/JZNavigationExtension.git
+     pod 'Masonry',                    '1.1.0'      #源码下载地址:https://github.com/SnapKit/Masonry
      pod 'HexColors',                  '4.0.0'
 end

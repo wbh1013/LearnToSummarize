@@ -18,8 +18,7 @@
 
 
 +(void)initialize{
-    [super initialize];
-    
+
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor hx_colorWithHexRGBAString:@"#9a9795"],NSForegroundColorAttributeName,[UIFont systemFontOfSize:11],NSFontAttributeName, nil] forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor hx_colorWithHexRGBAString:@"#22c5c0"], NSForegroundColorAttributeName,[UIFont systemFontOfSize:11],NSFontAttributeName, nil] forState:UIControlStateSelected];
     

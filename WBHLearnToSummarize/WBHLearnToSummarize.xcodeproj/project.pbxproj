@@ -138,9 +138,9 @@
 		46B33C311FDF7CE400ED5C7D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46B33C491FDF7EF800ED5C7D /* Category */,
 				46B33C3B1FDF7DEC00ED5C7D /* interface(界面) */,
 				46B33C3C1FDF7DEC00ED5C7D /* UtilityClass(工具类) */,
+				46B33C491FDF7EF800ED5C7D /* Category */,
 				46B33C321FDF7CE400ED5C7D /* Main */,
 				46B33C351FDF7CE400ED5C7D /* Other */,
 			);

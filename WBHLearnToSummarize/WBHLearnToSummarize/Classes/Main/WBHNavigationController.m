@@ -14,9 +14,11 @@
 
 @implementation WBHNavigationController
 
-
++(void)load{
+    NSLog(@"%s",__func__);
+}
 +(void)initialize{
-    [super initialize];
+    NSLog(@"%s",__func__);
     // 在info.plist 中 View controller-based status bar appearance 设置为NO
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
