@@ -253,8 +253,8 @@
 		C1F727F71FE031C900596727 /* 转场动画 */ = {
 			isa = PBXGroup;
 			children = (
-				C1F727F81FE031C900596727 /* WBHAnimatedTransitionsController.m */,
 				C1F727F91FE031C900596727 /* WBHAnimatedTransitionsController.h */,
+				C1F727F81FE031C900596727 /* WBHAnimatedTransitionsController.m */,
 			);
 			path = "转场动画";
 			sourceTree = "<group>";
@@ -262,10 +262,10 @@
 		C1F727FA1FE031C900596727 /* UIWebView与js的交互 */ = {
 			isa = PBXGroup;
 			children = (
-				C1F727FB1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.h */,
 				C1F727FC1FE031C900596727 /* WBHWebViewJSController.m */,
-				C1F727FD1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m */,
 				C1F727FE1FE031C900596727 /* WBHWebViewJSController.h */,
+				C1F727FB1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.h */,
+				C1F727FD1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m */,
 			);
 			path = "UIWebView与js的交互";
 			sourceTree = "<group>";
@@ -273,8 +273,8 @@
 		C1F727FF1FE031C900596727 /* 核心动画 */ = {
 			isa = PBXGroup;
 			children = (
-				C1F728001FE031C900596727 /* WBHCoreOfAnimationViewController.m */,
 				C1F728011FE031C900596727 /* WBHCoreOfAnimationViewController.h */,
+				C1F728001FE031C900596727 /* WBHCoreOfAnimationViewController.m */,
 			);
 			path = "核心动画";
 			sourceTree = "<group>";
