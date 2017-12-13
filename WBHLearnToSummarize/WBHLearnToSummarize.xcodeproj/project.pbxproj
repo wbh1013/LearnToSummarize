@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461C5D321FE0C77000294E99 /* WBHWebViewJSController+WBHDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D2F1FE0C76F00294E99 /* WBHWebViewJSController+WBHDelegate.m */; };
+		461C5D331FE0C77000294E99 /* WBHWebViewJSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D311FE0C76F00294E99 /* WBHWebViewJSController.m */; };
+		461C5D361FE0C7A800294E99 /* WBHHybirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D351FE0C7A800294E99 /* WBHHybirdController.m */; };
 		46B33C151FDF79EE00ED5C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B33C131FDF79EE00ED5C7D /* Main.storyboard */; };
 		46B33C171FDF79EE00ED5C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B33C161FDF79EE00ED5C7D /* Assets.xcassets */; };
 		46B33C1A1FDF79EE00ED5C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B33C181FDF79EE00ED5C7D /* LaunchScreen.storyboard */; };
@@ -22,8 +25,6 @@
 		46B33C5D1FDFB2EA00ED5C7D /* WBHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B33C5C1FDFB2EA00ED5C7D /* WBHBaseViewController.m */; };
 		5F7B96320BB2D0060BB29655 /* libPods-WBHLearnToSummarizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D976F06EAC5DAF5928C38C /* libPods-WBHLearnToSummarizeUITests.a */; };
 		C1F728021FE031C900596727 /* WBHAnimatedTransitionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F727F81FE031C900596727 /* WBHAnimatedTransitionsController.m */; };
-		C1F728031FE031C900596727 /* WBHWebViewJSController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F727FC1FE031C900596727 /* WBHWebViewJSController.m */; };
-		C1F728041FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F727FD1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m */; };
 		C1F728051FE031C900596727 /* WBHCoreOfAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F728001FE031C900596727 /* WBHCoreOfAnimationViewController.m */; };
 		DAC5DEED0F133C6D65CB6A8B /* libPods-WBHLearnToSummarize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2A4EA210F85B1C9D69828 /* libPods-WBHLearnToSummarize.a */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,12 @@
 /* Begin PBXFileReference section */
 		035C1A0DFDA8EB81A1939756 /* Pods-WBHLearnToSummarize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBHLearnToSummarize.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBHLearnToSummarize/Pods-WBHLearnToSummarize.release.xcconfig"; sourceTree = "<group>"; };
 		3FA75E17D1AA1268B1A4D2E2 /* Pods-WBHLearnToSummarizeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBHLearnToSummarizeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBHLearnToSummarizeUITests/Pods-WBHLearnToSummarizeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		461C5D2E1FE0C76F00294E99 /* WBHWebViewJSController+WBHDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHWebViewJSController+WBHDelegate.h"; sourceTree = "<group>"; };
+		461C5D2F1FE0C76F00294E99 /* WBHWebViewJSController+WBHDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBHWebViewJSController+WBHDelegate.m"; sourceTree = "<group>"; };
+		461C5D301FE0C76F00294E99 /* WBHWebViewJSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHWebViewJSController.h; sourceTree = "<group>"; };
+		461C5D311FE0C76F00294E99 /* WBHWebViewJSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHWebViewJSController.m; sourceTree = "<group>"; };
+		461C5D341FE0C7A800294E99 /* WBHHybirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHHybirdController.h; sourceTree = "<group>"; };
+		461C5D351FE0C7A800294E99 /* WBHHybirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHHybirdController.m; sourceTree = "<group>"; };
 		46B33C0A1FDF79EE00ED5C7D /* WBHLearnToSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBHLearnToSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B33C141FDF79EE00ED5C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B33C161FDF79EE00ED5C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,10 +76,6 @@
 		5B6710528E3D9E522B6FD7E9 /* Pods-WBHLearnToSummarize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBHLearnToSummarize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBHLearnToSummarize/Pods-WBHLearnToSummarize.debug.xcconfig"; sourceTree = "<group>"; };
 		C1F727F81FE031C900596727 /* WBHAnimatedTransitionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHAnimatedTransitionsController.m; sourceTree = "<group>"; };
 		C1F727F91FE031C900596727 /* WBHAnimatedTransitionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHAnimatedTransitionsController.h; sourceTree = "<group>"; };
-		C1F727FB1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHWebViewJSController+WBHDelegate.h"; sourceTree = "<group>"; };
-		C1F727FC1FE031C900596727 /* WBHWebViewJSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHWebViewJSController.m; sourceTree = "<group>"; };
-		C1F727FD1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBHWebViewJSController+WBHDelegate.m"; sourceTree = "<group>"; };
-		C1F727FE1FE031C900596727 /* WBHWebViewJSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHWebViewJSController.h; sourceTree = "<group>"; };
 		C1F728001FE031C900596727 /* WBHCoreOfAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHCoreOfAnimationViewController.m; sourceTree = "<group>"; };
 		C1F728011FE031C900596727 /* WBHCoreOfAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHCoreOfAnimationViewController.h; sourceTree = "<group>"; };
 		C7D976F06EAC5DAF5928C38C /* libPods-WBHLearnToSummarizeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBHLearnToSummarizeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +111,27 @@
 				3FA75E17D1AA1268B1A4D2E2 /* Pods-WBHLearnToSummarizeUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		461C5D2C1FE0C76F00294E99 /* (混编)Hybrid */ = {
+			isa = PBXGroup;
+			children = (
+				461C5D2D1FE0C76F00294E99 /* UIWebView与js的交互 */,
+				461C5D341FE0C7A800294E99 /* WBHHybirdController.h */,
+				461C5D351FE0C7A800294E99 /* WBHHybirdController.m */,
+			);
+			path = "(混编)Hybrid";
+			sourceTree = "<group>";
+		};
+		461C5D2D1FE0C76F00294E99 /* UIWebView与js的交互 */ = {
+			isa = PBXGroup;
+			children = (
+				461C5D2E1FE0C76F00294E99 /* WBHWebViewJSController+WBHDelegate.h */,
+				461C5D2F1FE0C76F00294E99 /* WBHWebViewJSController+WBHDelegate.m */,
+				461C5D301FE0C76F00294E99 /* WBHWebViewJSController.h */,
+				461C5D311FE0C76F00294E99 /* WBHWebViewJSController.m */,
+			);
+			path = "UIWebView与js的交互";
 			sourceTree = "<group>";
 		};
 		46B33C011FDF79EE00ED5C7D = {
@@ -215,7 +239,7 @@
 		46B33C4E1FDFB0CA00ED5C7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C1F727FA1FE031C900596727 /* UIWebView与js的交互 */,
+				461C5D2C1FE0C76F00294E99 /* (混编)Hybrid */,
 				C1F727F71FE031C900596727 /* 转场动画 */,
 				C1F727FF1FE031C900596727 /* 核心动画 */,
 				46B33C4F1FDFB0CA00ED5C7D /* WBHInterfaceController.h */,
@@ -257,17 +281,6 @@
 				C1F727F81FE031C900596727 /* WBHAnimatedTransitionsController.m */,
 			);
 			path = "转场动画";
-			sourceTree = "<group>";
-		};
-		C1F727FA1FE031C900596727 /* UIWebView与js的交互 */ = {
-			isa = PBXGroup;
-			children = (
-				C1F727FC1FE031C900596727 /* WBHWebViewJSController.m */,
-				C1F727FE1FE031C900596727 /* WBHWebViewJSController.h */,
-				C1F727FB1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.h */,
-				C1F727FD1FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m */,
-			);
-			path = "UIWebView与js的交互";
 			sourceTree = "<group>";
 		};
 		C1F727FF1FE031C900596727 /* 核心动画 */ = {
@@ -489,17 +502,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B33C3A1FDF7CE400ED5C7D /* main.m in Sources */,
+				461C5D361FE0C7A800294E99 /* WBHHybirdController.m in Sources */,
 				46B33C421FDF7E4B00ED5C7D /* WBHUtilityClassController.m in Sources */,
 				46B33C481FDF7E9B00ED5C7D /* WBHNavigationController.m in Sources */,
 				C1F728051FE031C900596727 /* WBHCoreOfAnimationViewController.m in Sources */,
 				46B33C381FDF7CE400ED5C7D /* AppDelegate.m in Sources */,
 				46B33C4C1FDF7F1500ED5C7D /* UIWindow+WBHWindow.m in Sources */,
+				461C5D331FE0C77000294E99 /* WBHWebViewJSController.m in Sources */,
 				46B33C511FDFB0CA00ED5C7D /* WBHInterfaceController.m in Sources */,
-				C1F728031FE031C900596727 /* WBHWebViewJSController.m in Sources */,
 				C1F728021FE031C900596727 /* WBHAnimatedTransitionsController.m in Sources */,
 				46B33C5D1FDFB2EA00ED5C7D /* WBHBaseViewController.m in Sources */,
 				46B33C451FDF7E8300ED5C7D /* WBHTabBarController.m in Sources */,
-				C1F728041FE031C900596727 /* WBHWebViewJSController+WBHDelegate.m in Sources */,
+				461C5D321FE0C77000294E99 /* WBHWebViewJSController+WBHDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
