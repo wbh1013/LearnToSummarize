@@ -8,7 +8,7 @@
 
 #import "WBHHybirdController.h"
 #import "WBHWebViewJSController.h"
-
+#import "WBHJSCameraController.h"
 
 @interface WBHHybirdController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -20,7 +20,6 @@
 @end
 
 @implementation WBHHybirdController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
@@ -29,15 +28,20 @@
 }
 -(void)initData{
     _dataArray = @[@"UIWebView与js的交互",
-//                   @""
+                   @"JS通过Native调用iOS设备摄像头"
                    ];
-    _vcArray   = @[NSStringFromClass([WBHWebViewJSController class])];
+    _vcArray   = @[NSStringFromClass([WBHWebViewJSController class]),
+                   NSStringFromClass([WBHJSCameraController class])
+                   ];
 }
 -(void)createUI{
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
 }
 -(UITableView *)tableView{
     if (_tableView == nil) {

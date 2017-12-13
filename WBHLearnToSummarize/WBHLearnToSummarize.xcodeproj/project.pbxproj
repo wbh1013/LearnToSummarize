@@ -10,6 +10,9 @@
 		461C5D321FE0C77000294E99 /* WBHWebViewJSController+WBHDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D2F1FE0C76F00294E99 /* WBHWebViewJSController+WBHDelegate.m */; };
 		461C5D331FE0C77000294E99 /* WBHWebViewJSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D311FE0C76F00294E99 /* WBHWebViewJSController.m */; };
 		461C5D361FE0C7A800294E99 /* WBHHybirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D351FE0C7A800294E99 /* WBHHybirdController.m */; };
+		461C5D3A1FE0CB6800294E99 /* WBHJSCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D391FE0CB6800294E99 /* WBHJSCameraController.m */; };
+		461C5D3C1FE0CB9300294E99 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 461C5D3B1FE0CB9300294E99 /* index.html */; };
+		461C5D3F1FE0CBE700294E99 /* UIImage+WBHBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C5D3E1FE0CBE700294E99 /* UIImage+WBHBase64.m */; };
 		46B33C151FDF79EE00ED5C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B33C131FDF79EE00ED5C7D /* Main.storyboard */; };
 		46B33C171FDF79EE00ED5C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B33C161FDF79EE00ED5C7D /* Assets.xcassets */; };
 		46B33C1A1FDF79EE00ED5C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B33C181FDF79EE00ED5C7D /* LaunchScreen.storyboard */; };
@@ -48,6 +51,11 @@
 		461C5D311FE0C76F00294E99 /* WBHWebViewJSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHWebViewJSController.m; sourceTree = "<group>"; };
 		461C5D341FE0C7A800294E99 /* WBHHybirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHHybirdController.h; sourceTree = "<group>"; };
 		461C5D351FE0C7A800294E99 /* WBHHybirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHHybirdController.m; sourceTree = "<group>"; };
+		461C5D381FE0CB6800294E99 /* WBHJSCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHJSCameraController.h; sourceTree = "<group>"; };
+		461C5D391FE0CB6800294E99 /* WBHJSCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHJSCameraController.m; sourceTree = "<group>"; };
+		461C5D3B1FE0CB9300294E99 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		461C5D3D1FE0CBE700294E99 /* UIImage+WBHBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WBHBase64.h"; sourceTree = "<group>"; };
+		461C5D3E1FE0CBE700294E99 /* UIImage+WBHBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WBHBase64.m"; sourceTree = "<group>"; };
 		46B33C0A1FDF79EE00ED5C7D /* WBHLearnToSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBHLearnToSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B33C141FDF79EE00ED5C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B33C161FDF79EE00ED5C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				461C5D2D1FE0C76F00294E99 /* UIWebView与js的交互 */,
+				461C5D371FE0CB4700294E99 /* JS通过Native调用iOS设备摄像头 */,
 				461C5D341FE0C7A800294E99 /* WBHHybirdController.h */,
 				461C5D351FE0C7A800294E99 /* WBHHybirdController.m */,
 			);
@@ -132,6 +141,18 @@
 				461C5D311FE0C76F00294E99 /* WBHWebViewJSController.m */,
 			);
 			path = "UIWebView与js的交互";
+			sourceTree = "<group>";
+		};
+		461C5D371FE0CB4700294E99 /* JS通过Native调用iOS设备摄像头 */ = {
+			isa = PBXGroup;
+			children = (
+				461C5D381FE0CB6800294E99 /* WBHJSCameraController.h */,
+				461C5D391FE0CB6800294E99 /* WBHJSCameraController.m */,
+				461C5D3D1FE0CBE700294E99 /* UIImage+WBHBase64.h */,
+				461C5D3E1FE0CBE700294E99 /* UIImage+WBHBase64.m */,
+				461C5D3B1FE0CB9300294E99 /* index.html */,
+			);
+			path = "JS通过Native调用iOS设备摄像头";
 			sourceTree = "<group>";
 		};
 		46B33C011FDF79EE00ED5C7D = {
@@ -381,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461C5D3C1FE0CB9300294E99 /* index.html in Resources */,
 				46B33C391FDF7CE400ED5C7D /* Info.plist in Resources */,
 				46B33C1A1FDF79EE00ED5C7D /* LaunchScreen.storyboard in Resources */,
 				46B33C171FDF79EE00ED5C7D /* Assets.xcassets in Resources */,
@@ -506,6 +528,7 @@
 				46B33C421FDF7E4B00ED5C7D /* WBHUtilityClassController.m in Sources */,
 				46B33C481FDF7E9B00ED5C7D /* WBHNavigationController.m in Sources */,
 				C1F728051FE031C900596727 /* WBHCoreOfAnimationViewController.m in Sources */,
+				461C5D3F1FE0CBE700294E99 /* UIImage+WBHBase64.m in Sources */,
 				46B33C381FDF7CE400ED5C7D /* AppDelegate.m in Sources */,
 				46B33C4C1FDF7F1500ED5C7D /* UIWindow+WBHWindow.m in Sources */,
 				461C5D331FE0C77000294E99 /* WBHWebViewJSController.m in Sources */,
@@ -514,6 +537,7 @@
 				46B33C5D1FDFB2EA00ED5C7D /* WBHBaseViewController.m in Sources */,
 				46B33C451FDF7E8300ED5C7D /* WBHTabBarController.m in Sources */,
 				461C5D321FE0C77000294E99 /* WBHWebViewJSController+WBHDelegate.m in Sources */,
+				461C5D3A1FE0CB6800294E99 /* WBHJSCameraController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
